@@ -2,28 +2,51 @@
     font-family: handwritten;
     src: url('../codepharmer.github.io/fonts/fofer-free-font/fofer.otf') format('opentype');
 }
+@font-face {
+    font-family: grafitti;
+    src: url('../codepharmer.github.io/fonts/next_custom/next custom.ttf') format('opentype');
+}
 html {
     font-family: handwritten;
     color: whitesmoke;
     text-align: left;
     font-size: 16px;
+    display: inline;
 }
 body {
     background-color: black;
 }
-h1 {
-    margin: auto;
-    /*font-size: 99px;*/
+h1, h2 {
+    float: left;
+    margin-bottom: 10em;
+    /* display: inline; */
+    clear: left;
 }
-h3 {
-    font-family: handwritten;
-    font-size: 100%;
-    color: whitesmoke;
+.stretch_word{
+    font-family: grafitti;
+    font-size: larger;
 }
 a{
     text-decoration: none;
     color:aliceblue;
 }
+img{
+    width: 23%;
+    height: auto;
+    clear: right;
+    float: right;
+}
 span {
     display: inline-block;
+}
+script {
+    color: white;
+}
+.n {
+    color: white;
+}
+
+#my_resume {
+    align-content: space-between;
+    display:  block;
 }
