@@ -75,3 +75,6 @@ script {
 #hobbies>h2>.hobby{
     display:block;
 }
+.show_projects>p {
+    font-size: 2rem;
+}
