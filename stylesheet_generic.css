@@ -17,10 +17,12 @@ body {
     background-color: black;
 }
 h1, h2 {
+    font-size: 2.5rem;
     float: left;
     margin-bottom: 10em;
     /* display: inline; */
     clear: left;
+    text-align: left;
 }
 .stretch_word{
     font-family: grafitti;
@@ -28,7 +30,10 @@ h1, h2 {
 }
 a{
     text-decoration: none;
-    color:aliceblue;
+    color:grey;
+}
+a:hover{
+    color: lightblue;
 }
 img{
     width: 23%;
@@ -46,7 +51,27 @@ script {
     color: white;
 }
 
-#my_resume {
+#my_resume>h2 {
     align-content: space-between;
     display:  block;
+    height: auto;
+}
+
+#my_projects>h2 {
+    margin-bottom: 2px;
+}
+.show_projects {
+    float: right;
+    text-align: left;
+    font-size: 1.5rem;
+}
+#hobbies>h2 {
+    width: 100%;
+   float: left;
+}
+#hobbies>img {
+    align-content: right;
+}
+#hobbies>h2>.hobby{
+    display:block;
 }
