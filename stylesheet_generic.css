@@ -9,7 +9,7 @@
 html {
     font-family: handwritten;
     color: whitesmoke;
-    text-align: left;
+    text-align: center;
     font-size: 16px;
     display: inline;
 }
@@ -17,12 +17,12 @@ body {
     background-color: black;
 }
 h1, h2 {
-    font-size: 2.5rem;
-    float: left;
-    margin-bottom: 10em;
+    font-size: 3rem;
+    /* float: left; */
+    margin-bottom: auto;
     /* display: inline; */
     clear: left;
-    text-align: left;
+    text-align: center;
 }
 .stretch_word{
     font-family: grafitti;
@@ -38,8 +38,8 @@ a:hover{
 img{
     width: 23%;
     height: auto;
-    clear: right;
-    float: right;
+    float: center;
+    align-content: space-around;
 }
 span {
     display: inline-block;
@@ -67,14 +67,23 @@ script {
 }
 #hobbies>h2 {
     width: 100%;
-   float: left;
 }
-#hobbies>img {
+/* #hobbies>img {
     align-content: right;
-}
+} */
 #hobbies>h2>.hobby{
     display:block;
 }
 .show_projects>p {
     font-size: 2rem;
+}
+iframe {
+    position: relative;
+    background: #000;
+    border: none;
+    top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    width: 50%;
 }
