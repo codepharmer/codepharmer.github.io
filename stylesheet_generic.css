@@ -60,10 +60,9 @@ script {
 #my_projects>h2 {
     margin-bottom: 2px;
 }
-.show_projects {
-    float: right;
-    text-align: left;
-    font-size: 1.5rem;
+#my_projects>.show_projects {
+    text-align: center;
+    font-size: 3em;
 }
 #hobbies>h2 {
     width: 100%;
@@ -87,3 +86,14 @@ iframe {
     left: 0;
     width: 50%;
 }
+/* 
+#my_projects>.show_projects>h2>img {
+        width: 666px;
+        height: 195px;
+        position: relative;
+        display: inline-block;
+}
+
+#my_projects>.show_projects>h2>img:hover {
+    background: url("../codepharmer.github.io/graphics/hamming.jpg") no-repeat;
+} */
