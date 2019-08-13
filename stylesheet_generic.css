@@ -33,7 +33,7 @@ a{
     color:grey;
 }
 a:hover{
-    color: lightblue;
+    color: darkgrey;
 }
 img{
     width: 23%;
@@ -84,7 +84,7 @@ iframe {
     right: 0;
     bottom: 0; 
     left: 0;
-    width: 75%;
+    width: 65%;
 }
 /* 
 #my_projects>.show_projects>h2>img {
