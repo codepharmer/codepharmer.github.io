@@ -32,7 +32,7 @@
     crossorigin="anonymous"></script>
 </head>
 <body id="bootstrapOverrides">
-    <div class="container">
+    <div class="container d-flex justify-content-center">
     <nav class="navbar sticky-top rounded p-8 navbar-expand-sm navbar-dark bg-black" id="navbar" style="position: fixed;">
         <a class="navbar-brand nav-link disabled" style="color:grey;" href="#">
             <h2 style="color: whitesmoke">Welcome!</h2>
@@ -123,106 +123,127 @@
         <div class="row d-flex justify-content-center p-3">
             <h1>Some of my <a href="https://github.com/codepharmer" target="_blank">projects</a></h1>
         </div>
-        <div class="row p-3 d-flex justify-content-center" style="color:black; font-weight: heavy;">
-            <div class="col-7"> 
-                <div class="card">
-                    <a href="https://github.com/codepharmer/Hold-emPoker" alt="">
-                    <img class="card-img-top" src="../codepharmer.github.io/graphics/holdem_poker.jpg" alt="poker_pic">
-                    </a>
-                    <div class="card-body">
-                        <!-- , Project Manager    October - December 2019 -->
+        <div class="row p-3 d-flex justify-content-center"  style="color:black; font-weight: heavy;">
+            <div class="col-7">
+                <div class="container">
+                   <div class="row">
+                       <div class="col-12">
+                            <a href="https://github.com/codepharmer/Hold-emPoker" alt="poker_project">
+                                <img class="card-img-top" src="../codepharmer.github.io/graphics/holdem_poker.jpg"
+                            onmouseover="this.src='../codepharmer.github.io/graphics/texas-holdem-transition.jpg'"
+                            onmouseout="this.src='../codepharmer.github.io/graphics/holdem_poker.jpg'"
+                            alt="poker_img"/>
+                            </a>
+                       </div>
+                       <div class="col-12"> 
                         <h1 class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Holdem' Poker
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <h2 style="font-family: gooddog;">
-                                December 2019 <br />
-                                Led team of 3 in building Java based hold’em poker game, 
-                                utilizing modular software design to increase code reusability
+                                <h2 style="font-family: gooddog;">
+                                    December 2019 <br />
+                                    Led team of 3 in building Java based hold’em poker game, 
+                                    utilizing modular software design to increase code reusability
                                 </h2>
                             </div>
                         </h1>
+                        </div>
                     </div>
+                        <!-- , CUNY Kingsborough    December 2018 -->
                 </div>
-                <!-- <img src="../codepharmer.github.io/graphics/holdem_poker.jpg" alt="poker_pic"/></a><br />
-                <br /> -->
                 <br />
             </div>
             <div class="col-7">
-                <div class="card">
-                    <img class="card-img-top" src="../codepharmer.github.io/graphics/atari.jpg"
-                onmouseover="this.src='../codepharmer.github.io/graphics/emoticantoo.jpg'"
-                onmouseout="this.src='../codepharmer.github.io/graphics/atari.jpg'"
-                alt="gamer"/>
-                    <div class="card-body">
+                <div class="container">
+                   <div class="row ">
+                       <div class="col-12">
+                            <a href="#" 
+                            download="">
+                            <img class="card-img-top" src="../codepharmer.github.io/graphics/atari.jpg"
+                            onmouseover="this.src='../codepharmer.github.io/graphics/emoticantoo.jpg'"
+                            onmouseout="this.src='../codepharmer.github.io/graphics/atari.jpg'"
+                            alt="gamer"/></a>
+                       </div>
+                       <div class="col-12"> 
                         <h1 class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Emoticantoo
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <h2 style="font-family: gooddog;">
-                            July 2019 - July 2020 <br />
-                            Working with professor and team of behaviorial specialists at Columbia University to extend a game teaching
-                            emotion recognition through an implementation of game-based learning.
-
-                            </h2>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Emoticantoo
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <h2 style="color: gooddog;">
+                                    July 2019 - July 2020 <br />
+                                    Working with professor and team of behaviorial specialists at Columbia University to extend a game teaching
+                                    emotion recognition through an implementation of game-based learning.
+                                </h2>        
+                            </div>
+                        </h1>
                         </div>
-                    </h1>
-                        <!-- , Extending Emotion Recognition Game          July 2019 – July 2020 -->
                     </div>
+                        <!-- , CUNY Kingsborough    December 2018 -->
                 </div>
             </div>
         </div>
         <div class="row p-3 d-flex justify-content-center"  style="color:black; font-weight: heavy;">
             <div class="col-7">
-               <div class="card">
-                <a href="https://github.com/codepharmer/Nosson-s-Text-Editor">
-                    <img class="card-img-top" src="../codepharmer.github.io/graphics/text_editor.jpg"  alt="txt_editor"/></a>
-                   <div class="card-body">
-                    <h1 class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Text Editor
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <h2 style="font-family: gooddog;">
-                            April 2019 <br />
-                            Led two person team in building a C++ based Text Editor implementing data structures, 
-                            including stacks, lists and trees. Utilized project in tutoring CS students.
-                            </h2>
+                <div class="container">
+                   <div class="row">
+                       <div class="col-12">
+                        <a href="https://github.com/codepharmer/Nosson-s-Text-Editor">
+                            <img class="card-img-top" src="../codepharmer.github.io/graphics/text_editor.jpg"
+                            onmouseover="this.src='../codepharmer.github.io/graphics/vs_code.jpg'"
+                            onmouseout="this.src='../codepharmer.github.io/graphics/text_editor.jpg'"
+                            alt="text-editor"/></a>
+                       </div>
+                       <div class="col-12"> 
+                        <h1 class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Text Editor
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <h2 style="font-family: gooddog;">
+                                        April 2019 <br />
+                                Led two person team in building a C++ based Text Editor implementing data structures, 
+                                including stacks, lists and trees. Utilized project in tutoring CS students.
+                            </div>
+                        </h1>
                         </div>
-                    </h1>
-                    <!-- ,  -->
-                   </div>
-               </div>
-               
-               <br />
+                    </div>
+                        <!-- , CUNY Kingsborough    December 2018 -->
+                </div>
+                <br />
             </div>
             <div class="col-7">
-               <div class="card">
-                <a href="../codepharmer.github.io/other_content/hamming_code.pdf" 
-                download="hamming_presentation.pdf">
-                <img class="card-img-top" src="../codepharmer.github.io/graphics/powerpoint.jpg"
-                onmouseover="this.src='../codepharmer.github.io/graphics/hamming.jpg'"
-                onmouseout="this.src='../codepharmer.github.io/graphics/powerpoint.jpg'"  alt="richard_hamming"/></a>
-                   <div class="card-body">
-                    <h1 class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Honors Presentation
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <h2 style="font-family: gooddog;">
-                            December 2018 <br />
-                            Applied visualization and association techniques in
-                            illustrating theory and mechanisms behind Hamming codes
-                            </h2>
+                <div class="container">
+                   <div class="row ">
+                       <div class="col-12">
+                            <a href="../codepharmer.github.io/other_content/hamming_code.pdf" 
+                            target="_blank">
+                            <img class="card-img-top d-flex align-items-center" src="../codepharmer.github.io/graphics/powerpoint.jpg"
+                            onmouseover="this.src='../codepharmer.github.io/graphics/hamming.jpg'"
+                            onmouseout="this.src='../codepharmer.github.io/graphics/powerpoint.jpg'"  alt="richard_hamming"/>
+                            </a>
+                       </div>
+                       <div class="col-12"> 
+                        <h1 class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Honors Presentation
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <h2 style="color: gooddog;">
+                                    December 2018 <br />
+                                    Applied visualization and association techniques in
+                                    illustrating theory and mechanisms behind Hamming codes
+                                    </h2>
+                            </div>
+                        </h1>
                         </div>
-                    </h1>
+                    </div>
                         <!-- , CUNY Kingsborough    December 2018 -->
-                   </div>
-               </div>
+                </div>
             </div>
-        </div>           
+        </div>
+        </div>                      
     </div>
     <div class="container p-3" id="myResume">
         <div class="row">
