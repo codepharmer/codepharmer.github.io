@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>git/codepharmer</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet_generic.css" type="text/css" media="screen" />
     <script type="text/javascript">
                 months_left;
@@ -17,83 +21,250 @@
                     else document.write(" month ")
                 };
     </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
 </head>
-<body>
-    <div id="intro">
-        <h1>Hello, allow me to introduce myself, my name is <br><stretch>NOSSON</stretch>,<br> it's so nice to meet you!<br>
-            <img src="../codepharmer.github.io/graphics/profile_pic.jpg" alt="funky_profile"
-             /></h1>
-        <!--<h1>Nosson Weissman</h1>--><!--<div class="image-blurred-edge">-->
-           
-        <!--</div>-->
-    </div>
-    <div id="me">
-        <br>
-        <h2>I am a student of Computer Science and Mathematics...</h2>
-        <img src="../codepharmer.github.io/graphics/mandelbrot-set.jpg" width=63% alt="mandelbrodt_set"/>
-    </div>
-    <div id="graduating">
-        <h2><br>I've got <script>months_left();</script> left to complete my Bachelor's degree</h2>
-        <img src="../codepharmer.github.io/graphics/graduate.png"  alt="graduate"/>
-    </div>
-    <div id="my_passion">
-        <h2>I love math and am currently applying for positions in both mathematics and software engineering</h2>
-        <img src="../codepharmer.github.io/graphics/math_symbols.jpg"  alt="graduate"/>
+<body id="bootstrapOverrides">
+    <div class="container">
+    <nav class="navbar sticky-top rounded p-8 navbar-expand-sm navbar-dark bg-black" id="navbar" style="position: fixed;">
+        <a class="navbar-brand nav-link disabled" style="color:grey;" href="#">
+            <h2 style="color: whitesmoke">Welcome!</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#aboutMe">
+                  <h3 style="color: whitesmoke">About Nosson Weissman</h3>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myProjects">
+                  <h3 style="color: whitesmoke">Projects</h3>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myResume" tabindex="-1" aria-disabled="true">
+                  <h3 style="color: whitesmoke">Resume</h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myLinkedIn" tabindex="-1" aria-disabled="true">
+                    <h3 style="color: whitesmoke">LinkedIn</h3>
+                </a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myInterests" tabindex="-1" aria-disabled="true">
+                    <h3 style="color: whitesmoke">Interests</h3>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
     </div>
 
-    <div id="my_projects">
-        <h2>Some of my <a href="https://github.com/codepharmer" target="_blank">projects</a></h2>
-        <div class="show_projects"> 
-            <h2>
-                    Holdem' Poker, Project Manager    October - December 2019<br>
-                    <!-- <a href="#" 
-                    download="#"> -->
-                    <img src="../codepharmer.github.io/graphics/holdem_poker.jpg" alt="poker_pic"/></a><br>
-                    
-
-                    Emoticantoo, Extending Emotion Recognition Game          July 2019 – July 2020<br>
-                    <img src="../codepharmer.github.io/graphics/atari.jpg"
-                    onmouseover="this.src='../codepharmer.github.io/graphics/emoticantoo.jpg'"
-                    onmouseout="this.src='../codepharmer.github.io/graphics/atari.jpg'"
-                    alt="gamer"/><br>
-                    Text Editor, VI Text Editor written in C++               April 2019<br>
-                    <a href="https://github.com/codepharmer/Nosson-s-Text-Editor">
-                        <img src="../codepharmer.github.io/graphics/text_editor.jpg"  alt="txt_editor"/></a><br>
-                    Honors Presentation, CUNY Kingsborough    December 2018<br>
-                    <a href="../codepharmer.github.io/other_content/hamming_code.pdf" 
-                    download="hamming_presentation.pdf">
-                    <img src="../codepharmer.github.io/graphics/powerpoint.jpg"
-                    onmouseover="this.src='../codepharmer.github.io/graphics/hamming.jpg'"
-                    onmouseout="this.src='../codepharmer.github.io/graphics/powerpoint.jpg'"  alt="richard_hamming"/></a><br>
-                </h2>
+    <div class="container p-3 clearfix" id="aboutMe">
+        <br />
+        <div class="row p-3" >
+            <div class="col-6">
+                <h1 class="mt-5">Hello, allow me to introduce myself, my name is <br />
+                    <stretch>NOSSON</stretch>,<br /> 
+                    it's so nice to meet you!<br />
+                </h1><br />
+            <!--<h1>Nosson Weissman</h1>--><!--<div class="image-blurred-edge">-->
+            <!--</div>-->
             </div>
-        <!-- "https://github.com/codepharmer" !-->
+            <div class="col-6">
+                <img class="rounded expand-62 mt-5" style="width: 79%;" src="../codepharmer.github.io/graphics/profile_pic.jpg" alt="funky_profile"/>
+            </div>
+        </div>
+        <br>
+        <div class="row p-3">
+            <div class="col-6">
+        <!-- <div id="me"> -->
+                <h2>I am a student of Computer Science and Mathematics... <br />
+            </div>
+            <div class="col-6">
+                    <img class="expand-62" style="width: 62%;" src="../codepharmer.github.io/graphics/mandelbrot-set.jpg" width=63% alt="math_illustration"/><br />
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-6">
+                <h2>I've got <script>months_left();</script> left to complete my Bachelor's degree</h2><br />
+            </div>
+            <div class="col-6">
+                <img class="rounded" style="width: 49%;" src="../codepharmer.github.io/graphics/graduate.png"  alt="graduate"/><br />
+            </div>
+        </div>
+        <!-- </div>
+        <div id="my_passion"> -->
+        <div class="row p-3">
+            <div class="col-6">
+                <h2>I love math and am currently applying for positions in both mathematics and software engineering</h2><br />
+            </div>
+            <div class="col-6">
+                <img class="expand-62" style="width: 49%;" src="../codepharmer.github.io/graphics/math_symbols.jpg"  alt="graduate"/><br /></h2>
+            </div>
+        </div>
+        <!-- </div> -->
+        </div>
+    </div>
+    <div class="container p-3" id="myProjects">
+        <div class="row d-flex justify-content-center p-3">
+            <h1>Some of my <a href="https://github.com/codepharmer" target="_blank">projects</a></h1>
+        </div>
+        <div class="row p-3 d-flex justify-content-center" style="color:black; font-weight: heavy;">
+            <div class="col-7"> 
+                <div class="card">
+                    <a href="https://github.com/codepharmer/Hold-emPoker" alt="">
+                    <img class="card-img-top" src="../codepharmer.github.io/graphics/holdem_poker.jpg" alt="poker_pic">
+                    </a>
+                    <div class="card-body">
+                        <!-- , Project Manager    October - December 2019 -->
+                        <h1 class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Holdem' Poker
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <h2 style="font-weight: bold;">
+                                December 2019 <br />
+                                Led team of 3 in building Java based hold’em poker game, 
+                                utilizing modular software design to increase code reusability
+                                </h2>
+                            </div>
+                        </h1>
+                    </div>
+                </div>
+                <!-- <img src="../codepharmer.github.io/graphics/holdem_poker.jpg" alt="poker_pic"/></a><br />
+                <br /> -->
+                <br />
+            </div>
+            <div class="col-7">
+                <div class="card">
+                    <img class="card-img-top" src="../codepharmer.github.io/graphics/atari.jpg"
+                onmouseover="this.src='../codepharmer.github.io/graphics/emoticantoo.jpg'"
+                onmouseout="this.src='../codepharmer.github.io/graphics/atari.jpg'"
+                alt="gamer"/>
+                    <div class="card-body">
+                        <h1 class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Emoticantoo
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <h2 style="font-weight: bold;">
+                            July 2019 - July 2020 <br />
+                            Working with Professor and team of behaviorial specialists at Columbia University to extend a game teaching
+                            emotion recognition through an implementation of game-based learning.
+
+                            </h2>
+                        </div>
+                    </h1>
+                        <!-- , Extending Emotion Recognition Game          July 2019 – July 2020 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3 d-flex justify-content-center"  style="color:black; font-weight: heavy;">
+            <div class="col-7">
+               <div class="card">
+                <a href="https://github.com/codepharmer/Nosson-s-Text-Editor">
+                    <img class="card-img-top" src="../codepharmer.github.io/graphics/text_editor.jpg"  alt="txt_editor"/></a>
+                   <div class="card-body">
+                    <h1 class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Text Editor
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <h2 style="font-weight: bold;">
+                            April 2019 <br />
+                            Led two person team in building a C++ based Text Editor implementing data structures, 
+                            including stacks, lists and trees. Utilized project in tutoring CS students.
+                            </h2>
+                        </div>
+                    </h1>
+                    <!-- ,  -->
+                   </div>
+               </div>
+               
+               <br />
+            </div>
+            <div class="col-7">
+               <div class="card">
+                <a href="../codepharmer.github.io/other_content/hamming_code.pdf" 
+                download="hamming_presentation.pdf">
+                <img class="card-img-top" src="../codepharmer.github.io/graphics/powerpoint.jpg"
+                onmouseover="this.src='../codepharmer.github.io/graphics/hamming.jpg'"
+                onmouseout="this.src='../codepharmer.github.io/graphics/powerpoint.jpg'"  alt="richard_hamming"/></a>
+                   <div class="card-body">
+                    <h1 class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Honors Presentation
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <h2 style="font-weight: bold;">
+                            December 2018 <br />
+                            Applied visualization and association techniques in
+                            illustrating theory and mechanisms behind Hamming codes
+                            </h2>
+                        </div>
+                    </h1>
+                        <!-- , CUNY Kingsborough    December 2018 -->
+                   </div>
+               </div>
+            </div>
+        </div>           
+    </div>
+    <div class="container p-3" id="myResume">
+        <div class="row">
+            <div class="col-12"> 
+                <h2>This pdf has a little more information about me </h2>
+            </div>
+            <div class="col-12">
+                <div class="embed-reponsive embed-responsive-8by11">
+                    <iframe class="embed-reponsive-item" src="../codepharmer.github.io/other_content/NossonWeissman_Resume.pdf" >
+                        weissman_resume.pdf
+                    </iframe>
+                </div>
+            </div><!-- allowtransparency="true" onload="this.style.height=(this.contentDocument.body.scrollHeight+45) +'px !important';" scrolling="no"  style="width:100%;min-height:1000px;border:none;overflow-y:hidden;overflow-x:hidden;" -->
+            <div class="col-12">
+                <h2>...or <a href="../codepharmer.github.io/other_content/NossonWeissman_Resume.pdf" 
+                download="Weissman_Resume.pdf">here's</a> a <em>free</em> copy</h2>
+            </div>
+        </div>
     </div>
 
-    <div id="my_resume">
-        <h2>This pdf has a little more information about me <br>
-        <iframe src="../codepharmer.github.io/other_content/NossonWeissman_Resume.pdf" >
-            weissman_resume.pdf</iframe><!-- allowtransparency="true" onload="this.style.height=(this.contentDocument.body.scrollHeight+45) +'px !important';" scrolling="no"  style="width:100%;min-height:1000px;border:none;overflow-y:hidden;overflow-x:hidden;" -->
-            <br>...or <a href="../codepharmer.github.io/other_content/NossonWeissman_Resume.pdf" 
-            download="Weissman_Resume.pdf">here's</a> a <em>free</em> copy</h2>
-    </div>
-
-    <div id="linkedin">
-        <h2>I hope I'm not giving off the "black and white" impression, check out my linkedin</h2>
-        <a href="https://linkedin.com/in/nossonweissman" target="_blank">
-        <img src="../codepharmer.github.io/graphics/linkedin.jpg" alt="linkedin_logo"/> </a>
+    <div class="container p-3" id="myLinkedIn">
+        <div class ="row">
+            <div class="col-6">
+                <h2>I hope I'm not giving off the "black and white" impression, check out my linkedin</h2>
+            </div>
+            <div class="col-6">
+                <a href="https://linkedin.com/in/nossonweissman" target="_blank">
+                <img style="width: 48%;" src="../codepharmer.github.io/graphics/linkedin.jpg" alt="linkedin_logo"/> </a>
+            </div>
+        </div>
     </div>
     
-    <div id="hobbies">
-        <h2>
-            Here are some other stuff I'm into:
-            <div class="hobby">Hiking<br><img src="../codepharmer.github.io/graphics/hiking.jpg" alt="hiking pic"/><br></div>
-            <div class="hobby">Skiing<br><img src="../codepharmer.github.io/graphics/skiing.jpg" alt="skiing" /><br></div>
+    <div class="container fontweight-bolder p-3" id="myInterests">
+        <h2>Here are some other stuff I'm into:</h2><br />
+        <div class="row">
+            <div class="col-6"><h2>Hiking</h2><img class="rounded" style="width: 79%;" src="../codepharmer.github.io/graphics/hiking.jpg" alt="hiking pic"/></div>
+            <div class="col-6"><h2>Skiing</h2><img class="rounded"  style="width: 79%;" src="../codepharmer.github.io/graphics/skiing.jpg" alt="skiing" /></div>
             <!-- <div class="hobby">Running<br><img src="#" alt="run" /><br></div> -->
-            <div class="hobby">All Kinds of Cuisine (check out my shakshuka!)<br><img src="../codepharmer.github.io/graphics/cooking.jpg" alt="shakshuka"/><br></div>
-            <div class="hobby">Seeing New Places<br><img src="../codepharmer.github.io/graphics/traveling.jpg" alt="travel" /><br></div>
+            <div class="col-6"><h2>All Kinds of Cuisine (check out my shakshuka!)</h2><img class="rounded" style="width: 79%;" src="../codepharmer.github.io/graphics/cooking.jpg" alt="shakshuka"/></div>
+            <div class="col-6"><h2>Seeing New Places</h2><img class="rounded" style="width: 79%;" src="../codepharmer.github.io/graphics/traveling.jpg" alt="travel" /></div>
             
-        </h2>
+        </div>
     </div>
 </body>
 </html>

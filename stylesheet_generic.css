@@ -6,13 +6,14 @@
     font-family: grafitti;
     src: url('../codepharmer.github.io/fonts/next_custom/next custom.ttf') format('opentype');
 }
-html {
+#bootstrapOverrides {
     font-family: handwritten;
     color: whitesmoke;
     text-align: center;
     font-size: 16px;
     display: inline;
 }
+
 body {
     background-color: black;
 }
@@ -27,6 +28,15 @@ h1, h2 {
 .stretch_word{
     font-family: grafitti;
     font-size: larger;
+}
+.slategrey{
+    color: slategrey;
+}
+.grey{
+    color: grey;
+}
+.bg-black{
+    background-color: black;
 }
 a{
     text-decoration: none;
@@ -50,50 +60,9 @@ script {
 .n {
     color: white;
 }
-
-#my_resume>h2 {
-    align-content: space-between;
-    display:  block;
-    height: auto;
-}
-
-#my_projects>h2 {
-    margin-bottom: 2px;
-}
-#my_projects>.show_projects {
-    text-align: center;
-    font-size: 3em;
-}
-#hobbies>h2 {
-    width: 100%;
-}
 /* #hobbies>img {
     align-content: right;
 } */
-#hobbies>h2>.hobby{
-    display:block;
-}
-.show_projects>p {
-    font-size: 2rem;
-}
 iframe {
-    position: relative;
-    background: #000;
-    border: none;
-    top: 0; 
-    right: 0;
-    bottom: 0; 
-    left: 0;
     width: 65%;
 }
-/* 
-#my_projects>.show_projects>h2>img {
-        width: 666px;
-        height: 195px;
-        position: relative;
-        display: inline-block;
-}
-
-#my_projects>.show_projects>h2>img:hover {
-    background: url("../codepharmer.github.io/graphics/hamming.jpg") no-repeat;
-} */
