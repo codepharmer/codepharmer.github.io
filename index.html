@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta id="pageReloadTag" http-equiv = "refresh" content = "20; url = https://hire-nw.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>codepharmer</title>
     <link rel="img_src" href="https://codepharmer.github.io/graphics/mandelbrot-set.jpg"/>
@@ -22,7 +23,6 @@
 <body id="bootstrapOverrides">
     
     <div class="container d-flex justify-content-center">
-        
     <nav class="navbar sticky-top rounded p-8 navbar-expand-md navbar-dark bg-black" id="navbar" style="position: fixed;">
         <a class="navbar-brand nav-link disabled" style="color:grey;" href="#">
             <h2 style="color: whitesmoke">Welcome!</h2>
@@ -64,6 +64,43 @@
     </div>
 
     <div class="container border rounded-lg p-3 clearfix" id="aboutMe">
+        <h2 style="color: hotpink">
+            Welcome :) <br />I now have a new portfolio website. <br/> This site will automatically redirect to <a style="color: lightpink" href = "https://hire-nw.com/">hire-nw.com</a> <br/>
+            in <span id="secondsCountdown"></span>
+            <!-- <a style="color: hotpink" href="#" onclick="cancelPageReload()">Click here if you'd rather stay on this humble monochromatic website</a> -->
+        </h2>
+        <script type="text/javascript">
+
+            var maxTicks = 20;
+            var tickCount = 0;
+            
+            var tick = function()
+            {
+                if (tickCount-1 >= maxTicks)
+                {
+                    // Stops the interval.
+                    clearInterval(myInterval);
+                    return;
+                }
+        
+                /* The particular code you want to excute on each tick */
+                document.getElementById("secondsCountdown").innerHTML = (maxTicks - tickCount);
+        
+                tickCount++;
+            };
+        
+            // Start calling tick function every 1 second.
+            var myInterval = setInterval(tick, 1000);
+            console.log("f");
+        </script>
+        <script>
+            function cancelPageReload(){
+                var el = document.getElementsByTagName("META")[1].remove();
+                el.httpEquiv = "";
+                el.content = "60";
+                console.log(el);
+            }
+        </script>
         <br />
         <div class="row p-3" >
             <div class="col-12 col-md-6">
